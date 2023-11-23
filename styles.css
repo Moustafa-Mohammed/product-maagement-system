@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&display=swap");
+}
+
+:root {
+  scroll-behavior: smooth;
+  --bg-primary-dark: #1f2028;
+  --bg-secondary-dark: #0a0a0a;
+  --bg-slate: #2e3039;
+  --main-color-dark: #fff;
+  --secondary-color-dark: #a9adc1;
+  --border-color-dark: #444;
+  --border-radius: 8px;
+}
+
+body {
+  background-color: var(--bg-primary-dark);
+  color: var(--main-color-dark);
+  font-family: "Martel Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+h1 {
+  width: max-content;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color-dark);
+  margin: 2rem 0;
+}
+
+form :first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.amounts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin-block: 1rem;
+}
+
+input {
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  outline: none;
+  background-color: var(--bg-slate);
+  border: 1px solid var(--border-color-dark);
+  color: var(--main-color-dark);
+}
+
+input:focus {
+  border: 1px solid var(--secondary-color-dark);
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+input[type="search"] {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+button {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background-color: var(--bg-primary-dark);
+  border: 1px solid var(--border-color-dark);
+  color: var(--main-color-dark);
+  border-radius: var(--border-radius);
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--bg-secondary-dark);
+}
+
+small {
+  float: right;
+  font-weight: bold;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-secondary-dark);
+  border-radius: var(--border-radius);
+}
+
+small::before {
+  content: "Total: ";
+}
+
+table {
+  background-color: var(--bg-slate);
+  width: 100%;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+table th {
+  border-bottom: 1px solid var(--secondary-color-dark);
+}
+
+table td,
+table th {
+  padding: 0.75rem;
+}
+table td {
+  border-right: 1px solid var(--border-color-dark);
+}
+table tr :last-child {
+  border-right: none;
+}
+
+.delete {
+  background-color: red;
+}
+
+.delete:hover {
+  background-color: rgba(255, 0, 0, 0.762);
+}

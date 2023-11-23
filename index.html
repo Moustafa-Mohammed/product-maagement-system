@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Managemrt System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Product Management System</h1>
+      </header>
+      <main>
+        <form id="form">
+          <div>
+            <input type="text" id="title" placeholder="title" />
+            <input type="text" id="category" placeholder="category" />
+            <input type="text" id="status" placeholder="status" />
+          </div>
+          <div class="amounts">
+            <input type="text" id="price" placeholder="price" />
+            <input type="text" id="taxes" placeholder="taxes" />
+            <input type="text" id="discount" placeholder="discount" />
+          </div>
+          <button id="addProduct" type="submit">Add Product</button>
+          <small id="total"></small>
+        </form>
+
+        <!-- Start of outputs -->
+
+        <section class="search-product">
+          <input type="search" placeholder="search product" />
+          <label
+            >Search by Title: <input type="radio" name="search-option" checked
+          /></label>
+          <label
+            >Search by Category: <input type="radio" name="search-option"
+          /></label>
+        </section>
+
+        <table>
+          <thead>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Status</th>
+            <th>Discount</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th></th>
+            <th></th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
