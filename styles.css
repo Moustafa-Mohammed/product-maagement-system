@@ -133,3 +133,15 @@ table tr :last-child {
 .delete:hover {
   background-color: rgba(255, 0, 0, 0.762);
 }
+.greenBackground {
+  background-color: #00ff00;
+}
+
+.disabled {
+  background-color: rgb(162, 97, 97);
+  cursor: auto;
+}
+
+.disabled:hover {
+  background-color: rgb(162, 97, 97);
+}
